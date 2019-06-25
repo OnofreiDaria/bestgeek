@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Account settings</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu-profile.html')
+    @@include('templates/view-post.html')
+    <div class="flex-container container-follow-user">
+        <div class="btn-sidebar-mob">
+            <button class="btn btn-sidebar btn-white" id="btnLeft">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-sidebar btn-white" id="btnSettings">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="follow-user_sidebar">
+            <div class="sidebar left-menu close-block">
+                <button class="btn btn-transparent btn-flat btn-cancel">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h5>
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings</h5>
+                <ul>
+                    <li class="active">
+                        <a href="account-settings.html">Account</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="">Email & Notifications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="follow-user_info profile-container">
+            <div class="account-container">
+                <h5 class="title">Account Settings</h5>
+                <div class="account-settings_block">
+                    <div class="settings-label">Primary Email</div>
+                    <div class="settings">
+                        <p>dumitru.birchin@gmail.com</p>
+                        <button class="btn btn-flat btn-transparent btn-settings">Add another email address</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">Password</div>
+                    <div class="settings">
+                        <button class="btn btn-flat btn-transparent btn-settings">Change password</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">Logout</div>
+                    <div class="settings">
+                        <button class="btn btn-flat btn-transparent btn-settings">logoutof all other browsers</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">Country</div>
+                    <div class="settings">
+                        <p>Moldova</p>
+                        <button class="btn btn-flat btn-transparent btn-settings">Change to another country</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">City</div>
+                    <div class="settings">
+                        <p>Chisinau</p>
+                        <button class="btn btn-flat btn-transparent btn-settings">Change to another city</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">Language</div>
+                    <div class="settings">
+                        <p>English</p>
+                        <button class="btn btn-flat btn-transparent btn-settings">Change to another language</button>
+                    </div>
+                </div>
+
+                <h5 class="title">Connected Accounts</h5>
+                <div class="account-settings_block">
+                    <div class="settings-label">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                        Google</div>
+                    <div class="settings">
+                        <p>dumitru.birchin@gmail.com</p>
+                        <button class="btn btn-flat btn-transparent btn-settings">Disconnect</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        Twitter</div>
+                    <div class="settings">
+                        <button class="btn btn-flat btn-transparent btn-settings">Connect Twitter Account</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        Facebook</div>
+                    <div class="settings">
+                        <button class="btn btn-flat btn-transparent btn-settings">Connect Facebook Account</button>
+                    </div>
+                </div>
+                <div class="account-settings_block">
+                    <div class="settings-label">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        LinkedIn</div>
+                    <div class="settings">
+                        <button class="btn btn-flat btn-transparent btn-settings">Connect LinkedIn Account</button>
+                    </div>
+                </div>
+
+
+
+            </div><!-- END .follow-user_personal -->
+        </div><!-- END .follow-user-info -->
+        <div class="sidebar highlight-sidebar close-block">
+            <button class="btn btn-transparent btn-flat btn-cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <h5 class="text-orange">Highlights</h5>
+            <div class="editable-box">
+                <p class="editable-p">Phone Number</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    + 373 69011486
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Gender</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-select">
+                    Male
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Date of Birth</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text datepicker">
+                    16/02/90
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Password</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    676887989
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Address</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    87 Hagenes Flats
+                    Moldova, Chisinau
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Add Employment
+                    credential</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    Designer<br>
+                    2016 - 2017
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Add education
+                    credential</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    Universitatea de Stat din MD
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Add location
+                    credential</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    U.S.A, Pensilvania<br>
+                    2012 - 2013
+                </div>
+            </div>
+        </div>
+    </div><!-- END .flex-container-->
+
+
+</div>
+
+
+@@include('templates/footer.html')
+</body>
+</html>

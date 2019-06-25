@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Statistics</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu-profile.html')
+    @@include('templates/view-post.html')
+    <div class="flex-container container-follow-user">
+        <div class="btn-sidebar-mob">
+            <button class="btn btn-sidebar btn-white" id="btnLeft">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-sidebar btn-white" id="btnSettings">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="follow-user_sidebar">
+            <div class="sidebar-statistic">
+                <div class="sidebar">
+                    <p class="user-name text-center">Ecaterina Bota</p>
+                    <p class="text-center">Founder and CEO at EcaMedia Solution</p>
+                    <div class="statistic-notification">
+                        <p>Who’s viewed your profile</p>
+                        <p class="text-orange">2400</p>
+                    </div>
+                    <div class="statistic-notification">
+                        <p>Views of your post</p>
+                        <p class="text-orange">34</p>
+                    </div>
+                    <div class="access">
+                        <img src="img/lock.png" alt="">
+                        <small class="text-grey">Access exclusive tools & insights</small>
+                        <p>Reactivate Premium for free</p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="img-topic">
+                        <img src="img/interests.png" alt="photo">
+                    </div>
+                    <p class="user-name text-center">HUM2HUM</p>
+                    <div class="">
+                        <div class="statistic-notification">
+                            <p>Page notification </p>
+                            <p class="text-orange">2</p>
+                        </div>
+                        <div class="statistic-notification">
+                            <p>Recent visitors</p>
+                            <p class="text-orange">23</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sidebar left-menu close-block">
+                <button class="btn btn-transparent btn-flat btn-cancel">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h5>
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                    Feeds</h5>
+                <ul>
+                    <li>
+                        <a href="">Spaces</a>
+                        <span class="feeds-num">18</span>
+                    </li>
+                    <li>
+                        <a href="">Answers</a>
+                        <span class="feeds-num">8</span>
+                    </li>
+                    <li>
+                        <a href="">Questions</a>
+                        <span class="feeds-num">43</span>
+                    </li>
+                    <li>
+                        <a href="">Activity</a>
+                        <span class="feeds-num">54</span>
+                    </li>
+                    <li>
+                        <a href="">Shares</a>
+                        <span class="feeds-num">2</span>
+                    </li>
+                    <li>
+                        <a href="posts.html">Posts</a>
+                        <span class="feeds-num">24</span>
+                    </li>
+                    <li>
+                        <a href="create-blogs.html">Blogs</a>
+                        <span class="feeds-num">12</span>
+                    </li>
+                    <li>
+                        <a href="">Followers</a>
+                        <span class="feeds-num">89</span>
+                    </li>
+                    <li>
+                        <a href="followings.html">Followings</a>
+                        <span class="feeds-num">66</span>
+                    </li>
+                    <li>
+                        <a href="topics.html">Topics</a>
+                        <span class="feeds-num">34</span>
+                    <li>
+                        <a href="">Edits</a>
+                        <span class="feeds-num">13</span>
+                    </li>
+                    <li class="active">
+                        <a href="statistics.html">Viewers</a>
+                        <span class="feeds-num">1443</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="follow-user_info profile-container">
+            <div class="chart-container">
+                <div class="chart-data">
+                    <p>
+                        <span class="text-orange">2400</span> profile viewers in past
+                        <span class="text-orange">30</span> days</p>
+                    <p class="chart-data-red">-2% since last week</p>
+                </div>
+                <div class="chart">
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                </div>
+            </div><!-- END .follow-user_personal -->
+            <div class="tabs-container profile-follow">
+                <div class="tabs statistic-tabs">
+                    <ul>
+                        <li><a href="#tabs-1">All profile viewers</a></li>
+                        <li><a href="#tabs-2">94 interesting views</a></li>
+                        <li><a href="#tabs-3">2 work at Change healthcare</a></li>
+                    </ul>
+
+                    <div id="tabs-1">
+                        <div class="profile-follow-container">
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+
+
+
+                        </div>
+                        <div class="center">
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="#">1</a>
+                                <a class="active" href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+                        </div>
+                    </div><!-- END tab1 -->
+                    <div id="tabs-2">
+                        <div class="profile-follow-container">
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+
+
+
+                        </div>
+                        <div class="center">
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="#">1</a>
+                                <a class="active" href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+                        </div>
+                    </div><!-- END tab2 -->
+                    <div id="tabs-3">
+                        <div class="profile-follow-container">
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+                            <div class="discover-slider_block">
+                                <button class="btn-close"></button>
+                                <div class="img-user">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <a href="" class="person-link">Antonio Rose</a>
+                                <p class="user-prof">Can You Get Free Games
+                                    For Your Iphone</p>
+                                <button class="btn btn-follow btn-sm">Unfollow</button>
+                            </div>
+
+
+
+                        </div>
+                        <div class="center">
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="#">1</a>
+                                <a class="active" href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+                        </div>
+                    </div><!-- END tab3 -->
+                </div>
+
+
+            </div>
+        </div><!-- END .follow-user-info -->
+        <div class="sidebar highlight-sidebar close-block">
+            <button class="btn btn-transparent btn-flat btn-cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <h5 class="text-orange">Highlights</h5>
+            <div class="editable-box">
+                <p class="editable-p">Phone Number</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    + 373 69011486
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Gender</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-select">
+                    Male
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Date of Birth</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text datepicker">
+                    16/02/90
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Address</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    87 Hagenes Flats
+                    Moldova, Chisinau
+                </div>
+            </div>
+        </div>
+    </div><!-- END .flex-container-->
+
+
+</div>
+
+
+@@include('templates/footer.html')
+</body>
+</html>

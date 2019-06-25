@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Company</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu-profile.html')
+    <div class="flex-container flex-specialties">
+        <div class="company-sidebar follow-user_photo-block">
+            <div class="follow-user_photo">
+                <img src="img/photo.jpg" alt="photo">
+            </div>
+            <p class="user-name">HUM2HUM</p>
+            <div class="follow-user_following">
+                <button class="btn btn-flat btn-sm btn-orange">Followers</button>
+                <button class="btn btn-flat btn-sm btn-orange-border">See Jobs</button>
+            </div>
+        </div>
+        <div class="company-container">
+            <button class="btn btn-flat btn-transparent btn-dots">
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <h5 class="text-grey">Specialties</h5>
+            <div class="tag tag-orange">Search engine optimization</div>
+            <div class="tag tag-orange">we design and develop mobile apps</div>
+            <div class="tag tag-orange">social media</div>
+            <div class="tag tag-orange">paid search marketing</div>
+            <div class="tag tag-orange">we designe and develop websites</div>
+            <button class="btn btn-sm btn-flat btn-orange-border">+ Add specialty</button>
+
+
+            <div class="specialties-container">
+                <div class="input-block">
+                    <label for="url">Wesite URL</label>
+                    <input type="url" id="url">
+                </div>
+                <div class="input-block">
+                    <label for="size">Company size</label>
+                    <select name="speed" id="size" class="selectmenu">
+                        <option>1</option>
+                        <option>1</option>
+                        <option selected="selected">3</option>
+                        <option>4</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
+                <div class="input-block">
+                    <label for="industry">Industry</label>
+                    <select name="speed" id="industry" class="selectmenu">
+                        <option>Information technology and services</option>
+                        <option>Information technology and services</option>
+                        <option selected="selected">Information technology and services</option>
+                    </select>
+                </div>
+                <div class="input-block">
+                    <label for="year">Year founded</label>
+                    <input type="text" id="year">
+                </div>
+                <div class="input-block">
+                    <label for="type">Company type</label>
+                    <select name="speed" id="type" class="selectmenu">
+                        <option>Sole Proprietorship</option>
+                        <option>Sole Proprietorship</option>
+                        <option selected="selected">Sole Proprietorship</option>
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+@@include('templates/footer.html')
+</body>
+</html>

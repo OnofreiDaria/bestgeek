@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Visitor Statistics</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu-profile.html')
+    <div class="flex-container flex-specialties">
+        <div class="statistic-sidebar">
+            <h5>
+                <i class="fa fa-rss" aria-hidden="true"></i>
+                Feeds</h5>
+            <ul>
+                <li class="active">
+                    <a href="">Show all</a>
+                </li>
+                <li>
+                    <a href="">Likes</a>
+                </li>
+                <li>
+                    <a href="">Share</a>
+                </li>
+                <li>
+                    <a href="">Comments</a>
+                </li>
+                <li>
+                    <a href="">Mentions</a>
+                </li>
+
+            </ul>
+        </div><!-- END sidebar -->
+        <div class="statistic-container">
+            <div class="statistic-header">
+                <h5>Visitor demographics</h5>
+                <div class="divider"></div>
+                <fieldset>
+                    <label for="data">Data for:</label>
+                    <select name="data" id="data" class="selectmenu">
+                        <option>Job function</option>
+                        <option>Job function</option>
+                        <option selected="selected">Job function</option>
+                        <option>Job function</option>
+                        <option>Job function</option>
+                    </select>
+                </fieldset>
+
+            </div>
+            <div class="statistic-body">
+                <table>
+                    <tr>
+                        <th>Top job functions</th>
+                        <th>Visitors</th>
+                        <th>% of visitors</th>
+                    </tr>
+                    <tr>
+                        <td>Engineering</td>
+                        <td>4</td>
+                        <td>
+                            <progress max="100" value="80"></progress>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entrepreneurship</td>
+                        <td>1</td>
+                        <td>
+                            <progress max="100" value="40"></progress>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Information Technology</td>
+                        <td>9</td>
+                        <td>
+                            <progress max="100" value="100"></progress>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+@@include('templates/footer.html')
+</body>
+</html>

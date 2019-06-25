@@ -1,0 +1,131 @@
+.filterOptions {
+  padding-left: 0;
+  li {
+    display: inline-block;
+    background: #dcdcdc;
+    padding: 10px 35px;
+    margin-top: 10px;
+    &:before {
+      display: none;
+    }
+    &.filter-active {
+      background: #3D3BFF;
+      a {
+        color:#fff;
+      }
+    }
+  }
+}
+
+
+.invitation-block {
+  display: flex;
+  align-items: center;
+  max-width: 860px;
+  width: 100%;
+  padding: 20px 0;
+
+  .btn-container,
+  button{
+    margin-left: auto;
+    margin-top: 0;
+  }
+  .invitation-block-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+  }
+  .msg {
+    background: #e8e8e8;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+}
+.connections {
+  .ui-button:before,
+  .ui-button:after {
+    display: none;
+  }
+  .ui-button {
+    height: 0;
+  }
+  .ui-button .ui-icon {
+    display: none;
+  }
+  ul li.ui-menu-item:before {
+    display: none;
+    padding-left: 0;
+  }
+  .ui-selectmenu-button.ui-button {
+    height: auto;
+    padding: 0;
+
+  }
+}
+.filter-connection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+  margin-top: 30px;
+}
+.all-people-filter {
+  h6 {
+    font-weight: 400;
+    font-family: 'open-sans-regular', sans-serif;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.grey-block {
+  background: #e9e9e9;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* MEDIA */
+@media all and (max-width: 767px) {
+  .filter-connection,
+  .invitation-block{
+    flex-direction: column;
+    button,
+    .btn-container {
+      margin: 10px auto;
+    }
+  }
+  .invitation-block {
+    text-align: center;
+    label {
+      align-self: flex-start;
+    }
+  }
+  .filter-header {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 400px) {
+  .search-block-right {
+    input[name=searchName],
+    a {
+      width: 100%;
+    }
+    a {
+      padding-left: 15px;
+    }
+  }
+  .filter-connection {
+    align-items: flex-start;
+  }
+}

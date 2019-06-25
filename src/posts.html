@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Posts</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu-profile.html')
+    @@include('templates/view-post.html')
+    <div class="flex-container container-follow-user">
+        <div class="btn-sidebar-mob">
+            <button class="btn btn-sidebar btn-white" id="btnLeft">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-sidebar btn-white" id="btnSettings">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="follow-user_sidebar">
+            <div class="sidebar follow-user_photo-block">
+                <div class="follow-user_photo">
+                    <img src="img/photo.jpg" alt="photo">
+                </div>
+                <p class="user-name">Dumitru Birchin</p>
+                <div class="follow-user_following">
+                    <div class="followers">
+                        <p class="follow-num">345</p>
+                        <p class="follow">Followers</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="followers">
+                        <p class="follow-num">222</p>
+                        <p class="follow">Following</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar left-menu close-block">
+                <button class="btn btn-transparent btn-flat btn-cancel">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h5>
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                    Feeds</h5>
+                <ul>
+                    <li>
+                        <a href="">Spaces</a>
+                        <span class="feeds-num">18</span>
+                    </li>
+                    <li>
+                        <a href="">Answers</a>
+                        <span class="feeds-num">8</span>
+                    </li>
+                    <li>
+                        <a href="">Questions</a>
+                        <span class="feeds-num">43</span>
+                    </li>
+                    <li>
+                        <a href="">Activity</a>
+                        <span class="feeds-num">54</span>
+                    </li>
+                    <li>
+                        <a href="">Shares</a>
+                        <span class="feeds-num">2</span>
+                    </li>
+                    <li class="active">
+                        <a href="posts.html">Posts</a>
+                        <span class="feeds-num">24</span>
+                    </li>
+                    <li>
+                        <a href="create-blogs.html">Blogs</a>
+                        <span class="feeds-num">12</span>
+                    </li>
+                    <li>
+                        <a href="">Followers</a>
+                        <span class="feeds-num">89</span>
+                    </li>
+                    <li>
+                        <a href="followings.html">Followings</a>
+                        <span class="feeds-num">66</span>
+                    </li>
+                    <li>
+                        <a href="topics.html">Topics</a>
+                        <span class="feeds-num">34</span>
+                    <li>
+                        <a href="">Edits</a>
+                        <span class="feeds-num">13</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="follow-user_info profile-container">
+            <div class="follow-user_personal">
+                <h5 class="title">Your Personal Setting</h5>
+                <div class="input-block">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Full Name">
+                </div>
+                <div class="input-block">
+                    <label for="tag">Tag Line</label>
+                    <input type="text" id="tag" placeholder="Your Tag Line Here … ">
+                </div>
+                <div class="input-block">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="E-mail">
+                </div>
+            </div><!-- END .follow-user_personal -->
+            <div class="short-post">
+                <div class="short-post_header">
+                    <div class="short-post_person">
+                        <p class="post-topic">5 Tips For Offshore Software Development</p>
+                    </div>
+                    <div class="post-time text-right">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>2 minute ago</span>
+                    </div>
+                </div>
+                <div class="short-post_body">
+                    <h5>Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing 2 200 Letters</h5>
+                    <p class="see-more_text">I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. However, I’m going to have to admit that my emotional baggage has built up walls that not even a shock and awe campaign could bring down. But I do love. And in fact I even love unconditionally…
+                        (<button type="button" class="see-more opener">see more</button>)
+                    </p>
+                </div>
+
+                <div class="short-post_footer">
+
+
+                    <div class="short-post_footer_block">
+                        <div class="short-post_rating rating-up">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <span>23456</span>
+                        </div>
+                        <div class="short-post_rating rating-down">
+                            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                            <span>23886</span>
+                        </div>
+                        <div class="short-post_comment">
+                            <img src="img/comment.png" alt="">
+                            <span>79</span>
+                        </div>
+                    </div>
+                    <div class="short-post_footer_block">
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-share" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+
+            </div><!-- END .short-post -->
+            <div class="short-post">
+                <div class="short-post_header">
+                    <div class="short-post_person">
+                        <p class="post-topic">5 Tips For Offshore Software Development</p>
+                    </div>
+                    <div class="post-time text-right">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>2 minute ago</span>
+                    </div>
+                </div>
+                <div class="short-post_body">
+                    <h5>Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing 2 200 Letters</h5>
+                    <p class="see-more_text">I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. However, I’m going to have to admit that my emotional baggage has built up walls that not even a shock and awe campaign could bring down. But I do love. And in fact I even love unconditionally…
+                        (<button type="button" class="see-more opener">see more</button>)
+                    </p>
+                </div>
+
+                <div class="short-post_footer">
+
+
+                    <div class="short-post_footer_block">
+                        <div class="short-post_rating rating-up">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <span>23456</span>
+                        </div>
+                        <div class="short-post_rating rating-down">
+                            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                            <span>23886</span>
+                        </div>
+                        <div class="short-post_comment">
+                            <img src="img/comment.png" alt="">
+                            <span>79</span>
+                        </div>
+                    </div>
+                    <div class="short-post_footer_block">
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-share" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+
+            </div><!-- END .short-post -->
+        </div><!-- END .follow-user-info -->
+        <div class="sidebar highlight-sidebar close-block">
+            <button class="btn btn-transparent btn-flat btn-cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <h5 class="text-orange">Highlights</h5>
+            <div class="editable-box">
+                <p class="editable-p">Phone Number</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    + 373 69011486
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Gender</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-select">
+                    Male
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Date of Birth</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text datepicker">
+                    16/02/90
+                </div>
+            </div>
+            <div class="editable-box">
+                <p class="editable-p">Address</p>
+                <span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <div class="text editable-text">
+                    87 Hagenes Flats
+                    Moldova, Chisinau
+                </div>
+            </div>
+        </div>
+    </div><!-- END .flex-container-->
+
+
+</div>
+
+
+@@include('templates/footer.html')
+</body>
+</html>

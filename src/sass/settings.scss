@@ -1,0 +1,78 @@
+.account-settings_block {
+  display: flex;
+  margin-top: 15px;
+  align-items: baseline;
+  .settings-label {
+    color: #383e4e;
+    font-size: 18px;
+    width: 150px;
+    i {
+      color: #fd7113;
+      width: 30px;
+    }
+  }
+  .settings {
+    p {
+      color: #9b9b9b;
+      font-size: 14px;
+      margin-top: 0;
+    }
+    .btn-settings {
+      color: #383e4e;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+}
+.account-container {
+  background: #fff;
+  padding: 15px 15px 30px;
+  border: 1px solid #eef0f2;
+  .title {
+    margin: 20px 0;
+  }
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.search-block {
+  background: #fff;
+  width: 210px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 25px;
+  border: 1px solid #eef0f2;
+  margin: 10px;
+
+  .btn {
+    width: 126px;
+  }
+}
+.search-name {
+  color: #383e4e;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.search-descr {
+  color: #383e4e;
+  font-size: 12px;
+}
+.policy {
+  background: #fff;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+/************************************ MEDIA************************************/
+@media all and (max-width: 480px) {
+  .account-settings_block {
+    flex-direction: column;
+  }
+}

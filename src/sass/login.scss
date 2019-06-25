@@ -1,0 +1,110 @@
+.bg-login {
+  height: 100%;
+  min-height: 100vh;
+  background: url(../img/bg-login.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  padding: 20px 0;
+}
+.login-container {
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  .row {
+    padding: 0;
+  }
+}
+.col-2.login-col {
+  padding: 40px 50px 20px 50px;
+  &:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+p {
+  margin-top: 10px;
+}
+.forgot-password {
+  color: #626262;
+  font-size: 18px;
+  display: block;
+  margin: 20px auto 0;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fd7113;
+  }
+}
+/* Select interests */
+.outer-container {
+  padding: 25px 25px 10px;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.inner-container {
+  width: 100%;
+  background: #f1f5f8;
+  padding: 40px 25px;;
+}
+.interests-container {
+  width: 100%;
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  max-height: 350px;
+  overflow: overlay;
+}
+.interest-block {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: #fff;
+  color: #383e4e;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding-top: 30px;
+  cursor: pointer;
+  margin: 7px;
+}
+.interest-block_bg {
+  width: 82px;
+  height: 82px;
+  border: 1px solid #848ea4;
+  background: #d8d8d8;
+  color: #383e4e;
+  background-size: cover;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.check-interest {
+  width: 16px;
+  height: 16px;
+}
+.interest-block_check {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  &.hidden {
+    display: none;
+  }
+}
+@media all and (max-width: 652px) {
+  .interests-container {
+    justify-content: center;
+  }
+}
