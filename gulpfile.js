@@ -25,9 +25,9 @@ const imagemin     = require('gulp-imagemin');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "dist/"
+            baseDir: "docs/"
         },
-        files: ['dist/**/*.*']
+        files: ['docs/**/*.*']
     });
 });
 
@@ -113,7 +113,7 @@ gulp.task('js', function () {
 //     pump([
 //         gulp.src('src/**/*.js'),
 //         uglify(),
-//         gulp.dest('./dist/')
+//         gulp.dest('./docs/')
 //     ], cb);
 // });
 
